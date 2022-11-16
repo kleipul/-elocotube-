@@ -9,9 +9,10 @@ public class video {
     private int hora;
     private int minuto;
     private int segundo;
-    private String canal;
+    private canal nroCanal;
     private String descripcion;
     private int reproducciones;
+    private boolean hd;
 
     public video() {
         this.idVideo = 0;
@@ -19,9 +20,10 @@ public class video {
         this.hora = 0;
         this.minuto = 0;
         this.segundo = 0;
-        this.canal = "no info";
+        this.nroCanal = new canal();
         this.descripcion = "no info";
         this.reproducciones = 0;
+        this.hd = true;
     }
 
     public int getIdVideo() {
@@ -64,12 +66,12 @@ public class video {
         this.segundo = segundo;
     }
 
-    public String getCanal() {
-        return canal;
+    public canal getNroCanal() {
+        return nroCanal;
     }
 
-    public void setCanal(String canal) {
-        this.canal = canal;
+    public void setNroCanal(canal nroCanal) {
+        this.nroCanal = nroCanal;
     }
 
     public String getDescripcion() {
@@ -88,17 +90,27 @@ public class video {
         this.reproducciones = reproducciones;
     }
 
+    public boolean isHd() {
+        return hd;
+    }
+
+    public void setHd(boolean hd) {
+        this.hd = hd;
+    }
+
     @Override
     public String toString() {
         return "video{" + "idVideo=" + idVideo + ", tiutlo=" + tiutlo 
                 + ", hora=" + hora + ", minuto=" + minuto + ", segundo=" 
-                + segundo + ", canal=" + canal + ", descripcion=" + descripcion 
-                + ", reproducciones=" + reproducciones + '}';
+                + segundo + ", nroCanal=" + nroCanal + ", descripcion=" 
+                + descripcion + ", reproducciones=" + reproducciones 
+                + ", hd=" + hd + '}';
     }
-    
-    
+
 
     
     
+
+
 
 }
