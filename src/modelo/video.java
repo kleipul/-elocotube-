@@ -1,5 +1,7 @@
 package modelo;
 
+//Clase Video (para tabla video)
+
 public class video {
     
     private int idVideo;
