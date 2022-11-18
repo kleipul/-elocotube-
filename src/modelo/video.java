@@ -1,15 +1,13 @@
 package modelo;
 
 //Clase Video (para tabla video)
-
 public class video {
-    
+
     private int idVideo;
     private String tiutlo;
     private int hora;
     private int minuto;
     private int segundo;
-    private canal nroCanal;
     private String descripcion;
     private int reproducciones;
     private boolean hd;
@@ -20,7 +18,6 @@ public class video {
         this.hora = 0;
         this.minuto = 0;
         this.segundo = 0;
-        this.nroCanal = new canal();
         this.descripcion = "no info";
         this.reproducciones = 0;
         this.hd = true;
@@ -66,14 +63,6 @@ public class video {
         this.segundo = segundo;
     }
 
-    public canal getNroCanal() {
-        return nroCanal;
-    }
-
-    public void setNroCanal(canal nroCanal) {
-        this.nroCanal = nroCanal;
-    }
-
     public String getDescripcion() {
         return descripcion;
     }
@@ -100,17 +89,11 @@ public class video {
 
     @Override
     public String toString() {
-        return "video{" + "idVideo=" + idVideo + ", tiutlo=" + tiutlo 
-                + ", hora=" + hora + ", minuto=" + minuto + ", segundo=" 
-                + segundo + ", nroCanal=" + nroCanal + ", descripcion=" 
-                + descripcion + ", reproducciones=" + reproducciones 
+        return "video{" + "idVideo=" + idVideo + ", tiutlo=" + tiutlo
+                + ", hora=" + hora + ", minuto=" + minuto + ", segundo="
+                + segundo + ", descripcion="
+                + descripcion + ", reproducciones=" + reproducciones
                 + ", hd=" + hd + '}';
     }
-
-
-    
-    
-
-
 
 }
