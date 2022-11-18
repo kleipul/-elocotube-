@@ -65,6 +65,11 @@ public class ventana_principal extends javax.swing.JFrame {
 
         botonBuscar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         botonBuscar.setText("Buscar");
+        botonBuscar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botonBuscarMouseClicked(evt);
+            }
+        });
 
         botonEliminar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         botonEliminar.setText("Eliminar");
@@ -114,6 +119,14 @@ public class ventana_principal extends javax.swing.JFrame {
     private void botonEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonEliminarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_botonEliminarActionPerformed
+
+    private void botonBuscarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonBuscarMouseClicked
+        // TODO add your handling code here:
+        ventana_buscar vntBuscar = new ventana_buscar();
+        vntBuscar.setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_botonBuscarMouseClicked
 
     /**
      * @param args the command line arguments
