@@ -9,7 +9,6 @@ public class video {
     private int minuto;
     private int segundo;
     private String descripcion;
-    private int reproducciones;
     private boolean hd;
 
     public video() {
@@ -19,7 +18,6 @@ public class video {
         this.minuto = 0;
         this.segundo = 0;
         this.descripcion = "no info";
-        this.reproducciones = 0;
         this.hd = true;
     }
 
@@ -71,14 +69,6 @@ public class video {
         this.descripcion = descripcion;
     }
 
-    public int getReproducciones() {
-        return reproducciones;
-    }
-
-    public void setReproducciones(int reproducciones) {
-        this.reproducciones = reproducciones;
-    }
-
     public boolean isHd() {
         return hd;
     }
@@ -92,8 +82,7 @@ public class video {
         return "video{" + "idVideo=" + idVideo + ", tiutlo=" + tiutlo
                 + ", hora=" + hora + ", minuto=" + minuto + ", segundo="
                 + segundo + ", descripcion="
-                + descripcion + ", reproducciones=" + reproducciones
-                + ", hd=" + hd + '}';
+                + descripcion + ", hd=" + hd + '}';
     }
 
 }
